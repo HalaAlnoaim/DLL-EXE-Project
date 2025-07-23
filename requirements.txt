@@ -1,0 +1,26 @@
+#!/usr/bin/env python3
+# S-Rank Core - Requirements File
+# Install with: pip install -r requirements.txt
+
+# Core dependencies
+requests>=2.31.0
+pandas>=2.0.0
+openpyxl>=3.1.0
+python-dateutil>=2.8.0
+
+# Optional but recommended for better output
+rich>=13.0.0
+
+# For MITRE ATT&CK data processing
+# Note: enterpriseattack library is used in GapsAnalyzer but may not be actively maintained
+# Consider replacing with direct MITRE STIX data processing
+# enterpriseattack>=2.0.0
+
+# Additional utilities
+pathlib2>=2.3.0  # For Python < 3.4 compatibility (if needed)
+typing-extensions>=4.0.0  # For enhanced type hints
+
+# Development dependencies (optional)
+pytest>=7.0.0
+black>=23.0.0
+flake8>=6.0.0
