@@ -1,0 +1,100 @@
+{
+  "clients": [
+    {
+      "id": "cipher",
+      "name": "Cipher Security",
+      "enabled": true,
+      "priority": 1,
+      "description": "Primary security cluster"
+    },
+    {
+      "id": "ksf",
+      "name": "KSF Client",
+      "enabled": true,
+      "priority": 2,
+      "description": "Financial services client"
+    },
+    {
+      "id": "osh",
+      "name": "OSH Client",
+      "enabled": true,
+      "priority": 3,
+      "description": "Healthcare client"
+    },
+    {
+      "id": "jda",
+      "name": "JDA Client",
+      "enabled": true,
+      "priority": 4,
+      "description": "Supply chain client"
+    },
+    {
+      "id": "fa",
+      "name": "FA Client",
+      "enabled": true,
+      "priority": 5,
+      "description": "Financial advisory client"
+    },
+    {
+      "id": "svc",
+      "name": "SVC Client",
+      "enabled": true,
+      "priority": 6,
+      "description": "Service provider client"
+    },
+    {
+      "id": "latis",
+      "name": "Latis Client",
+      "enabled": true,
+      "priority": 7,
+      "description": "Technology client"
+    },
+    {
+      "id": "innova",
+      "name": "Innova Client",
+      "enabled": true,
+      "priority": 8,
+      "description": "Innovation hub client"
+    },
+    {
+      "id": "saip",
+      "name": "SAIP Client",
+      "enabled": true,
+      "priority": 9,
+      "description": "Industrial client"
+    },
+    {
+      "id": "golfsaudi",
+      "name": "Golf Saudi",
+      "enabled": true,
+      "priority": 10,
+      "description": "Sports and entertainment client"
+    }
+  ],
+  "api_settings": {
+    "timeout": 30,
+    "max_retries": 3,
+    "per_page": 100,
+    "base_url_template": "https://k{client}.ciphersa.net",
+    "headers": {
+      "kbn-xsrf": "true",
+      "Content-Type": "application/json",
+      "User-Agent": "S-Rank-Core/2.0"
+    }
+  },
+  "processing_settings": {
+    "technique_naming_format": "{technique}.{subtechnique}.{sub_subtechnique}",
+    "include_disabled_rules": false,
+    "excel_sheet_settings": {
+      "max_column_width": 100,
+      "wrap_text": true,
+      "auto_filter": true
+    }
+  },
+  "output_settings": {
+    "timestamp_format": "%Y_%m_%d_%H%M",
+    "create_summary_files": true,
+    "archive_old_outputs": true,
+    "max_archive_days": 30
+  }
+}
