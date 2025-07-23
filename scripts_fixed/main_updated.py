@@ -115,7 +115,7 @@ class EnhancedPipelineController:
             },
             "3": {
                 "name": "Gap Analysis", 
-                "script": "GapsAnalyzer.py",
+                "script": "GapsAnalyzer_updated.py",
                 "description": "Analyze MITRE coverage gaps using enhanced technique data",
                 "dependencies": ["2"],
                 "output_folder": "Reports_*",
@@ -124,7 +124,7 @@ class EnhancedPipelineController:
             },
             "4": {
                 "name": "Common Gaps Scanner",
-                "script": "GapsScanner.py", 
+                "script": "GapsScanner_updated.py", 
                 "description": "Identify common gaps across all clients with aggregated analysis",
                 "dependencies": ["3"],
                 "output_folder": "CommonGaps_*",
