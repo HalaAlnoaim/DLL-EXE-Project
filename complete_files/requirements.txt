@@ -1,0 +1,43 @@
+# S-Rank Core v2.0 - Enhanced Dependencies
+# Core dependencies for the pipeline
+
+# HTTP requests and API communication
+requests>=2.25.1
+
+# Data processing and analysis
+pandas>=1.3.0
+
+# Excel file handling and formatting
+openpyxl>=3.0.7
+
+# Enhanced console interface (optional but recommended)
+rich>=10.0.0
+
+# Additional utilities
+urllib3>=1.26.0
+
+# Date and time handling (built-in but ensuring compatibility)
+python-dateutil>=2.8.0
+
+# JSON processing (built-in but ensuring compatibility)
+# json - built-in module
+
+# File system operations (built-in)
+# pathlib - built-in module
+# os - built-in module
+
+# Type hints support
+typing-extensions>=3.10.0
+
+# Development and testing (optional)
+# pytest>=6.0.0
+# pytest-cov>=2.0.0
+
+# Installation command:
+# pip install -r requirements.txt
+#
+# For development environment:
+# pip install -r requirements.txt pytest pytest-cov
+#
+# For minimal installation (without rich UI):
+# pip install requests pandas openpyxl urllib3 python-dateutil typing-extensions
